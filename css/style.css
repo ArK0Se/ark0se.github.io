@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    height: 100%;
+    background-color: darkslategrey;
+    margin: 0;
+}
+
+nav{
+    height: 10%;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+section{
+    background-color: darkcyan;
+    height: 90%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5em;
+}
+
+.container > p{
+    font-size: 50pt;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 5px 10px black;
+}
+
+#moai{
+    cursor: pointer;
+}
+
+marquee{
+    margin: none;
+    font-size: 50pt;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+  }
+  .video-wrapper {
+    border: 2px solid #000;
+    width: 480px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
