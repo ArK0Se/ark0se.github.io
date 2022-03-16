@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="js/jquery.hotkeys-0.7.9.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>A R K O S E</title>
 </head>
 <body>
     <nav>
         <ul>
             <li>Bonjour</li>
             <li id="clash">HEHEHEHA</li>
-            <li>^^</li>
+            <li id="cringe">^^</li>
         </ul>
     </nav>
     
     <section>
         
         <div class="container">
-            <p>Ya rien ici</p>
+            <p class="noselect" id="color">Ya rien ici</p>
             
         </div>
         
         <div class="container">
-
-            <div class="video-wrapper">
-                <video playsinline autoplay muted loop poster="cake.jpg">
-                    <source src="assets/video/kanye.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <marquee direction="down" width="480" height="480" behavior="alternate" style="border:solid">
-                    <marquee behavior="alternate">
-                      🗿
-                    </marquee>
-                  </marquee>
-            </div>
             
-            <marquee behavior="scroll" direction="right">🗿🗿🗿🗿🗿🗿🗿<span id="moai">🗿</span>🗿🗿🗿🗿🗿🗿</marquee>
-
+            <div class="video-wrapper">
+                <video id="kanye" playsinline autoplay muted loop>
+                    <source  src="assets/video/kanye.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="marquee">
+                    🗿
+                </div>
+            </div>
+            <p class="noselect" id="mute">🔇</p>
+            
         </div>
+        
+        
+        
+        
+        <marquee behavior="scroll" direction="right">🗿🗿🗿🗿🗿🗿🗿<span id="moai">🗿</span>🗿🗿🗿🗿🗿🗿</marquee>
         
         
         
@@ -50,16 +54,7 @@
     
     
     
-    <script>
-        $("#clash").click(() =>{
-            var audio = new Audio('assets/audio/HEHEHEHA.mp3');
-            audio.play();
-        });
-        
-        $("#moai").click(() =>{
-            var audio = new Audio('assets/audio/moai.mp3');
-            audio.play();
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/dvd.js"></script>
 </body>
 </html>
